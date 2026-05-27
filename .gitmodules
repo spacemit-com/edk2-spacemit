@@ -1,6 +1,6 @@
 [submodule "edk2"]
-  path = edk2
-  url = ssh://gerrit.dc.com:29418/uefi/edk2
+	path = edk2
+	url = ssh://gerrit.dc.com:29418/uefi/edk2
 [submodule "edk2-platforms"]
-  path = edk2-platforms
-  url = ssh://gerrit.dc.com:29418/uefi/edk2-platforms
+	path = edk2-platforms
+	url = ssh://gerrit.dc.com:29418/uefi/edk2-platforms

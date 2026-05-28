@@ -6,6 +6,7 @@ Build-Depends:
  debhelper-compat (= 13),
  python3:any,
  u-boot-tools,
+ device-tree-compiler,
  uuid-dev,
 Standards-Version: 4.7.3
 Homepage: <insert the upstream URL, if relevant>

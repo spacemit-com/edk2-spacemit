@@ -4,8 +4,9 @@ Priority: optional
 Maintainer: bianbu <weizhi.li@spacemit.com>
 Build-Depends:
  debhelper-compat (= 13),
- gcj,
- javahelper,
+ python3:any,
+ u-boot-tools,
+ uuid-dev,
 Standards-Version: 4.7.3
 Homepage: <insert the upstream URL, if relevant>
 Rules-Requires-Root: no

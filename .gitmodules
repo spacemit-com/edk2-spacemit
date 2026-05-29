@@ -1,8 +1,8 @@
 [submodule "edk2"]
 	path = edk2
 	url = ssh://gerrit.dc.com:29418/uefi/edk2
-	branch = k1-dev
+	branch = k3-release
 [submodule "edk2-platforms"]
 	path = edk2-platforms
 	url = ssh://gerrit.dc.com:29418/uefi/edk2-platforms
-	branch = k1-dev
+	branch = k3-release

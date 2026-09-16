@@ -1,0 +1,8 @@
+# 冻结字节内容：禁止任何行尾/编码转换。
+#
+# 本仓库 in-tree vendored 了 edk2 / edk2-platforms（含 openssl、brotli、mbedtls
+# 等嵌套组件）的源码，这些字节必须与上游一致。若不锁定，Windows/macOS 上
+# core.autocrlf=true 的 clone 会产生整文件级的伪 diff。
+#
+# 深层目录若自带 .gitattributes，其规则优先级更高，不受此行影响。
+* -text

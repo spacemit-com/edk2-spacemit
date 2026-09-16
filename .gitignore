@@ -2,3 +2,23 @@
 __pycache__/
 tags/
 .vscode/
+
+# EDK2 构建产物。
+# debian/rules 里 export WORKSPACE = $(CURDIR)，即仓库根，所以 Build/ 等落在根目录。
+#
+# 必须带前导 / 锚定：树里存在三个同名 Conf 目录 ——
+#   edk2/Conf、edk2/BaseTools/Conf、edk2-platforms/.../ChachaniBoardPkg/Conf
+# 不锚定的 "Conf/" 会把 edk2/BaseTools/Conf/*.template 一起吞掉，构建直接失败。
+/Build/
+/Conf/
+/fitimage/
+/edk2.itb
+
+# dpkg-buildpackage / debhelper 的中间产物。
+# 放在这里而不是 debian/.gitignore，是为了让构建残留的规则集中在一处。
+/debian/.debhelper/
+/debian/files
+/debian/*.substvars
+/debian/debhelper-build-stamp
+/debian/edk2-spacemit/
+/debian/edk2-spacemit.debhelper.log

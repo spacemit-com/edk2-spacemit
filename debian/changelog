@@ -1,3 +1,12 @@
+edk2-spacemit (0.0.9) resolute; urgency=medium
+
+  * Sync edk2-platforms to e36cf450 from k3-release: EVB support, hardened
+    runtime SKU detection, and a PostBuild fix for locating the built images
+  * edk2 is unchanged (k3-release moved to bd5c8d4c, which only drops stale
+    gitlink entries)
+
+ -- weizhi.li <weizhi.li@spacemit.com>  Thu, 17 Sep 2026 18:30:00 +0800
+
 edk2-spacemit (0.0.8) resolute; urgency=medium
 
   * Sync edk2-platforms to 8f25d126 from k3-release: multi-config FIT

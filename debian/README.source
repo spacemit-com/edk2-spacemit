@@ -56,10 +56,10 @@ so they are inert upstream, but a fresh import has no tracking history to go
 by and `git add -A` drops those files silently.  vendor.sh re-adds every path
 listed in the upstream index instead.
 
-Do not remove the `.gitignore` rules in this repository's root: the Bianbu CI
-packaging tool refuses to run on a working tree with untracked files, and
-in-tree EDK2 builds leave Build/, Conf/, fitimage/, edk2.itb and
-debian/.debhelper/ behind.
+Do not remove the `.gitignore` rules in this repository's root: an in-tree
+build leaves Build/, Conf/, fitimage/, edk2.itb and debian/.debhelper/ behind,
+and without those rules every one of them shows up as an untracked file, which
+buries the changes you actually care about in `git status`.
 
 Note that the build also rewrites two *tracked* files: the
 dh_update_autotools_config helper copies the system config.guess and config.sub
